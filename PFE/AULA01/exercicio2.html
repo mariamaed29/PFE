@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <script>
+    
+        let salario = parseFloat(prompt("Digite o valor do salário: "));
+        let aluguel = parseFloat(prompt("Digite o valor do aluguel: "));
+        let alimentacao = parseFloat(prompt("Digite o valor da alimentação: "));
+        let lazer = parseFloat(prompt("Digite o valor do lazer: "));
+
+        
+        let total_despesas = aluguel + alimentacao + lazer;
+        let saldo = salario - total_despesas;
+
+        // Verificação do saldo
+        if (saldo > 0) {
+            alert("Saldo Positivo");
+        } else if (saldo === 0) {
+            alert("No Limite");
+        } else {
+            alert("Saldo Negativo");
+        }
+
+        alert(`Total de despesas: R$ ${total_despesas.toFixed(2)}`);
+        alert(`Saldo restante: R$ ${saldo.toFixed(2)}`);
+    </script>
+</body>
+</html>

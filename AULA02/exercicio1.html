@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversor de Temperatura</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.4s;
+        }
+
+        .container {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 8px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Conversor de Temperatura</h2>
+
+        <input type="number" id="celsius" placeholder="Digite a temperatura em °C">
+        <button onclick="converter()">Converter</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function converter() {
+            const celsius = document.getElementById("celsius").value;
+            const fahrenheit = celsius * 1.8 + 32;
+
+            document.getElementById("resultado").innerText =
+                `Temperatura em Fahrenheit: ${fahrenheit.toFixed(1)} °F`;
+
+            if (fahrenheit > 80) {
+                document.body.style.backgroundColor = "coral";
+            } else {
+                document.body.style.backgroundColor = "lightskyblue";
+            }
+        }
+    </script>
+
+</body>
+</html>

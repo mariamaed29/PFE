@@ -1,0 +1,56 @@
+body{
+    min-height: 100vh;
+    display: flexbox;
+    align-content: center;
+    justify-items: center;
+}
+.nome1{
+    height: 620px;
+    width: 800px;
+    background-color: aquamarine;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.nome2{
+    height: 180px;
+    width: 700px;
+    background-color: burlywood;
+    border: 2px solid black;
+      display: flex;
+    justify-content: center;  
+}
+.nome3{
+    height: 180px;
+    width: 700px;
+    background-color: chartreuse;
+    border: 2px solid black;
+     display: flex;
+    justify-content: center;
+}
+.nome4{
+    height: 180px;
+    width: 700px;
+    background-color: cadetblue;
+    border: 2px solid black;
+     display: flex;
+    justify-content: center;
+}
+
+.nome2,
+.nome3,
+.nome4 {
+    display: flex;
+    gap: 180px;
+    align-items: center;
+}
+
+.nome5{
+    height: 80px;
+    width: 75px;
+    background-color: coral;
+    border: 2px solid black;
+
+}

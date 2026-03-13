@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(126, 120, 126);
+}
+
+@media screen and (min-width: 1200px) {
+        img{
+            width: 10vh;
+            height: 10vh;
+        }
+        body{
+            background-color: rgb(212, 71, 165);
+        }
+    }
+    
+
+@media screen and (max-width: 1000px) {
+        img{
+            width: 10vh;
+            height: 10vh;
+        }
+        body{
+            background-color: rgb(46, 30, 41);
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        img{
+            width: 10vh;
+            height: 10vh;
+        }
+        body{
+            background-color: rgb(238, 173, 216);
+        }
+    }
+
+@media screen and (max-width: 600px) {
+
+    img{
+        width: 10vh;
+        height: 10vh;
+    }
+    body{
+        background-color: rgb(39, 23, 82);
+    }
+}

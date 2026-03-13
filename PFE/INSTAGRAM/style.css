@@ -1,0 +1,111 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#fafafa;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    border-bottom:1px solid #ccc;
+    background:white;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.navbar input{
+    padding:6px;
+    width:200px;
+}
+
+.icons span{
+    margin-left:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.icons img{
+    width: 20px;
+    height: 20px;
+}
+
+.icons img{
+    width: 25px;
+    height: 25px;
+}
+
+.icons img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* FEED */
+
+.feed{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:20px;
+}
+
+
+/* POST */
+
+.post{
+    background:white;
+    width:450px;
+    border:1px solid #ccc;
+    margin-bottom:30px;
+}
+
+/* HEADER DO POST */
+
+.post-header{
+    display:flex;
+    align-items:center;
+    padding:10px;
+}
+
+.perfil{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+
+/* IMAGEM */
+
+.post-img{
+    width:100%;
+}
+
+/* VIDEO */
+
+.post-video{
+    width:100%;
+}
+
+
+/* ICONES */
+
+.post-icons{
+    padding:10px;
+    font-size:22px;
+}
+
+/* LEGENDA */
+
+.legenda{
+    padding:0 10px 10px 10px;
+}

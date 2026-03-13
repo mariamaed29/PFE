@@ -18,8 +18,15 @@ body{
 }
 
 .logo{
-    font-size:24px;
-    font-weight:bold;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* espaço entre o ícone e o texto */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 30px;
 }
 
 .navbar input{
@@ -48,6 +55,45 @@ body{
     height: 20px;
 }
 
+/* STORIES */
+
+.stories{
+    display: flex;
+    gap: 20px;
+    padding: 15px;
+    overflow-x: auto;
+    background: #ffffff;
+    justify-content: center;
+}
+
+.story{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+}
+
+.story img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding: 3px;
+
+    background: linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+
+    object-fit: cover;
+}
+
+.story p{
+    margin-top: 5px;
+}
+
 
 /* FEED */
 
@@ -57,6 +103,8 @@ body{
     align-items:center;
     margin-top:20px;
 }
+
+
 
 
 /* POST */
